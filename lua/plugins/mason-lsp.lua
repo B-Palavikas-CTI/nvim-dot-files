@@ -11,4 +11,5 @@ return {
     opts = opts,
     event = "BufReadPre",
     dependencies = "williamboman/mason.nvim",
+    'WhoIsSethDaniel/mason-tool-installer.nvim',
 }

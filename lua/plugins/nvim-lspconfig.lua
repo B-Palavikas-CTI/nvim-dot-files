@@ -5,6 +5,16 @@ local config = function()
 
 	local capabilities = cmp_nvim_lsp.default_capabilities()
 
+
+    local on_attach = function(client, bufnr)
+        local function buf_set_keymap(...) vim.api.nvim_buf_set_keymap(bufnr, ...) end
+        local opts = { noremap=true, silent=true }
+
+        -- Example keymap: Go to definition
+        buf_set_keymap('n', 'gd', '<cmd>lua vim.lsp.buf.definition()<CR>', opts)
+        -- Add more mappings as needed
+    end
+
 	-- lua
 	lspconfig.lua_ls.setup({
 		capabilities = capabilities,
@@ -47,6 +57,7 @@ local config = function()
     lspconfig.clangd.setup({
         capabilities = capabilities,
         on_attach = on_attach,
+        cmd = {"clangd.exe"},
     })
 
 

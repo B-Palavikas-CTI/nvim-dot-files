@@ -1,6 +1,6 @@
 return{
     "akinsho/toggleterm.nvim",
-    lazy = false,    
+    lazy = false,
     config = function()
         local tgl = require("toggleterm")
 
@@ -13,7 +13,7 @@ return{
             persist_size = true,
             direction = "float",
             close_on_exit = true,
-            shell = vim.o.shell,
+--            shell = vim.o.shell,
         })
     end,
 }

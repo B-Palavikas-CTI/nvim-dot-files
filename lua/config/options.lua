@@ -57,7 +57,8 @@ opt.backup = false
 opt.undofile = true
 opt.writebackup = false
 
-
+-- Shell
+vim.opt.shell = 'git.exe'
 
 
 

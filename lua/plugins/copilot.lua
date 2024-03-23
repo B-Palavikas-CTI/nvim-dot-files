@@ -1,9 +1,9 @@
 return{
-    "github/copilot.vim",
+    -- "github/copilot.vim",
   --  "zbirenbaum/copilot.lua",
   -- cmd = "Copilot",
   -- event = "InsertEnter",
-    lazy = false,
+    -- lazy = false,
   -- config = function()
   --   require("copilot").setup({})
   -- end,   
