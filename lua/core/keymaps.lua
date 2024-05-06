@@ -1,3 +1,5 @@
+-- KEYMAPS
+
 -- set leader key to space
 vim.g.mapleader = " "
 
@@ -14,6 +16,8 @@ keymap.set("n", "<leader><leader>q", ":q!<CR>", { desc = "Quit without saving" }
 keymap.set("n", "<leader>w", ":w<CR>")
 keymap.set("n", "<leader><leader>w", ":wq<CR>")
 keymap.set("n", "<leader>nf", ":e")
+
+keymap.set("i", "jj", "<ESC>")
 
 -- indenting
 keymap.set("v", "<", "<gv")

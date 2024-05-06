@@ -1,3 +1,7 @@
+-- Set to true if you have a Nerd Font installed
+vim.g.have_nerd_font = true
+
+-- Vim options
 -- 
 local opt = vim.opt
 
@@ -56,23 +60,3 @@ opt.swapfile = false
 opt.backup = false
 opt.undofile = true
 opt.writebackup = false
-
--- Shell
-vim.opt.shell = 'git.exe'
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
